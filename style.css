@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #2a638f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#circ{
+  font-size: 4vmin;
+  font-family: Cutive Mono;
+  text-transform: uppercase;
+  animation: spin 14s linear infinite;
+  color: #bebbbc;
+}
+@keyframes spin{
+  100% {
+      transform: rotate(365deg);
+  }
+}
+
+  
