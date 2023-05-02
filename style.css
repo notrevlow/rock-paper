@@ -7,16 +7,57 @@
 body{
   width: 100%;
   height: 100vh;
-  background-color: #2a638f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: #0b0c0c;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
 }
+
+.container {
+  font-weight: 0;
+  margin-right: auto;
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  justify-content: space-around;
+  color: #050505;
+  font-size: 35px;
+
+}
+
+.neonText1 {
+  animation: flicker 1.5s infinite alternate;
+}
+.neonText2 {
+  animation: flicker 1.5s infinite alternate;
+  animation-delay: 2s;
+}
+.neonText3 {
+  animation: flicker 1.5s infinite alternate;
+  animation-delay: 4s;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #f4f4f4,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(240, 120, 174),
+      0 0 80px rgb(222, 51, 222),
+      0 0 90px rgb(222, 73, 155),
+      0 0 100px rgb(177, 102, 172),
+      0 0 150px rgb(225, 57, 203);
+  }
+  20%, 24%, 55% {        
+    text-shadow: none;
+  }    
+}
+
 #circ{
   font-size: 4vmin;
-  font-family: Cutive Mono;
   text-transform: uppercase;
   animation: spin 14s linear infinite;
   color: #bebbbc;
@@ -26,5 +67,3 @@ body{
       transform: rotate(365deg);
   }
 }
-
-  
