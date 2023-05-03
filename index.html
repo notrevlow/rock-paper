@@ -20,27 +20,38 @@
                   <h1 class="neonText3">OR SCISSORS?</h1>
          </header>
          
-         <main class="main">
-            <h2 class="score-info">Best out of 5 takes the crown</h2>
+               <h2 class="score-info">Best out of 5 takes the crown</h2>
             
-      
-            <div class="score">
-               <div class="player-score">0</div>
-               <div style="margin: 0px 50px">-</div>
-               <div class="computer-score">0</div>
-            </div>
+            <main class="main">  
+               <div class="left-items">
+                     <div class="score">
+                        <div class="player-score">0</div>
+                        <div style="margin: 0px 50px">-</div>
+                        <div class="computer-score">0</div>
+                     </div>
+                     <div id="circ">
+                        &nbsp; . Choose . Wisely
+               
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+                 
+                        <script>
+                           let circ = new CircleType(document.getElementById('circ'));
+                           circ.raduis(360);
+                        </script>
+                     </div>
+                     </div>
+                     
+                  <div class="right-items">
+                     
 
-            <div id="circ">
-               &nbsp; . Choose . Wisely
-      
-               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-               <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
-        
-               <script>
-                  let circ = new CircleType(document.getElementById('circ'));
-                  circ.raduis(360);
-               </script>
+                  </div>
             </div>
+            </main>
+
+            
+
+
 
        <div class="choose">
          <img src="rock.png" alt="rock">

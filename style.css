@@ -64,7 +64,13 @@ body{
 
 .main {
   margin-top: 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px 100px;
+}
+
+.left-items {
+  margin-left: 100px;
 }
 
 .score {
@@ -80,8 +86,10 @@ body{
 
 h2 {
   color:#fff;
-  padding: 30px;
+  padding: 10px;
   font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 #circ{
