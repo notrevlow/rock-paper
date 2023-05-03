@@ -10,31 +10,37 @@ body{
   background-color: #0b0c0c;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
-.container {
+.header {
   font-weight: 0;
   margin-right: auto;
   display: flex;
+  justify-content: center;
   padding: 20px;
   margin: 20px;
-  justify-content: space-around;
-  color: #050505;
+  color:  #0b0c0c;
   font-size: 35px;
+  word-spacing: normal;
 
 }
 
 .neonText1 {
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker .5s infinite alternate;
+  margin: 10px;
+  padding: 20px;
 }
 .neonText2 {
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker .5s infinite alternate;
   animation-delay: 2s;
+  margin: 10px;
+  padding: 20px;
 }
 .neonText3 {
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker .5s infinite alternate;
   animation-delay: 4s;
+  margin: 10px;
+  padding: 20px;
 }
 
 @keyframes flicker {
@@ -56,14 +62,47 @@ body{
   }    
 }
 
+.main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.score {
+  color:#f4f4f4;
+  font-family: 'Sigmar';
+  font-weight: lighter;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 50px;
+}
+
+h2 {
+  color:#fff;
+  padding: 30px;
+  font-size: 50px;
+}
+
 #circ{
   font-size: 4vmin;
   text-transform: uppercase;
-  animation: spin 14s linear infinite;
-  color: #bebbbc;
+  animation: spin 5s linear infinite;
+  color: #be9ba7;
 }
 @keyframes spin{
   100% {
       transform: rotate(365deg);
   }
+}
+
+.choose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  margin: 5px 20px 0px 20px;
+  width: 200px;
+  height: 200px;
 }
